@@ -1,0 +1,19 @@
+using System;
+
+class Teste
+{
+public static void PassagemSaida(out int v)
+{
+  
+  v = 7; 
+  Console.WriteLine("Valor no Metodo " + v); 
+}
+}
+
+class MainClass {
+  public static void Main (string[] args) {
+    int v = 1;
+    Teste.PassagemSaida(out v);
+    Console.WriteLine("Valor no Main = " + v); 
+  }
+}
